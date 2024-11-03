@@ -1,2 +1,3 @@
 [run]
 source = ohtuvarasto
+omit = src/tests/**,src/index.py
