@@ -4,9 +4,7 @@ def juomat(mehua, olutta):
 
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
-    print(f"Olutvarasto: {olutta}") 
-
-def Kierros1(mehua, olutta):
+    print(f"Olutvarasto: {olutta}")
 
     print("Olut getterit:")
     print(f"saldo = {olutta.saldo}")
@@ -21,27 +19,27 @@ def Kierros1(mehua, olutta):
     mehua.ota_varastosta(3.14)
     print(f"Mehuvarasto: {mehua}")
 
-def Kierros2(olutta):
+def oluet1(olutta):
     print(f"Olutvarasto: {olutta}")
     print("olutta.lisaa_varastoon(1000.0)")
     olutta.lisaa_varastoon(1000.0)
     print(f"Olutvarasto: {olutta}")
 
-def Mehua(mehua):
+def mehua1(mehua):
 
     print(f"Mehuvarasto: {mehua}")
     print("mehua.lisaa_varastoon(-666.0)")
     mehua.lisaa_varastoon(-666.0)
     print(f"Mehuvarasto: {mehua}")
 
-def kierros3(olutta):
+def oluet2(olutta):
     print(f"Olutvarasto: {olutta}")
     print("olutta.ota_varastosta(1000.0)")
     saatiin = olutta.ota_varastosta(1000.0)
     print(f"saatiin {saatiin}")
     print(f"Olutvarasto: {olutta}")
 
-def Mehut2(mehua):
+def mehut2(mehua):
     print(f"Mehuvarasto: {mehua}")
     print("mehua.otaVarastosta(-32.9)")
     saatiin = mehua.ota_varastosta(-32.9)
@@ -54,9 +52,6 @@ def main():
 
     juomat(mehua, olutta)
 
-    Kierros1(mehua, olutta)
-    Kierros2(olutta)  
-
     print("Virhetilanteita:")
     print("Varasto(-100.0);")
     huono = Varasto(-100.0)
@@ -66,10 +61,10 @@ def main():
     huono = Varasto(100.0, -50.7)
     print(huono)
 
-    Mehua(mehua)
-    kierros3(olutta)
-    Mehut2(mehua)
+    oluet1(olutta)
+    mehua1(mehua)
+    oluet2(olutta)
+    mehut2(mehua)
 
 if __name__ == "__main__":
     main()
-    
