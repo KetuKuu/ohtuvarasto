@@ -1,5 +1,7 @@
 from varasto import Varasto
 
+def juomat():
+    pass
 
 def main():
     mehua = Varasto(100.0)
